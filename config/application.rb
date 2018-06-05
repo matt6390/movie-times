@@ -22,6 +22,11 @@ module MovieTimes
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
+    config.action_dispatch.default_headers.merge!(
+                                                  'client' => 'ACTU',
+                                                  'x-api-key' => 'OIFuPmzZ3saAl6SybK8Co4idikgowdqo3o0yIekr',
+                                                  'Authorization' => 'QUNUVTo1T2pVQnZ2NUlwSTI=',
+                                                  )
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
